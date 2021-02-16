@@ -20,11 +20,13 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [chmod +x *.zsh]
   - command: ./setup_homebrew.zsh
     stdout: true
     stderr: true
   - command: ./setup_zsh.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_macos.zsh
     stdout: true
     stderr: true
   - command: ./setup_node.zsh
@@ -34,8 +36,5 @@
     stdout: true
     stderr: true
   - command: ./setup_ruby.zsh
-    stdout: true
-    stderr: true
-  - command: ./setup_macos.zsh
     stdout: true
     stderr: true
