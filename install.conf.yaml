@@ -5,12 +5,12 @@
 - clean: ['~']
 
 - link:
-  ~/.zshrc:
-  ~/.zshenv:
-  ~/.aliases:
-  ~/.gitconfig:
-  ~/.nanorc:
-  ~/.mackup.cfg:
+  ~/.zshrc: zshrc
+  ~/.zshenv: zshenv
+  ~/.aliases: aliases
+  ~/.gitconfig: gitconfig
+  ~/.nanorc: nanorc
+  ~/.mackup.cfg: mackup.cfg
   ~/.config/bat:
     create: true
     path: config/bat
@@ -20,6 +20,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [chmod +x *.zsh]
   - command: ./setup_homebrew.zsh
     stdout: true
     stderr: true
