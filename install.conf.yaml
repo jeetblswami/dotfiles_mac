@@ -5,15 +5,15 @@
 - clean: ['~']
 
 - link:
-  ~/.zshrc: zshrc
-  ~/.zshenv: zshenv
-  ~/.aliases: aliases
-  ~/.gitconfig: gitconfig
-  ~/.nanorc: nanorc
-  ~/.mackup.cfg: mackup.cfg
-  ~/.config/bat:
-    create: true
-    path: config/bat
+    ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
+    ~/.aliases: aliases
+    ~/.gitconfig: gitconfig
+    ~/.nanorc: nanorc
+    ~/.mackup.cfg: mackup.cfg
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
   - ~/projects/git
