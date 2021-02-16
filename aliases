@@ -1,0 +1,11 @@
+# Create Aliases
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
+alias trail='<<<${(F)path}'
+alias ftrail='<<<${(F)fpath}'
+alias rm=trash
+alias man=batman
+alias genhash="LC_ALL=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 30 | pbcopy; pbpaste"%
+
+#alias branch
+alias awslogin="aws-google-auth -D -q -u jitendra.swami@branch.co -I C03o0mbow -S 294532642813 -R us-east-1 -p default --no-cache"

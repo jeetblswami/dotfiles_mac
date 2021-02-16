@@ -1,0 +1,40 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+  ~/.zshrc:
+  ~/.zshenv:
+  ~/.aliases:
+  ~/.gitconfig:
+  ~/.nanorc:
+  ~/.mackup.cfg:
+  ~/.config/bat:
+    create: true
+    path: config/bat
+
+- create:
+  - ~/projects/git
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - command: ./setup_homebrew.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_zsh.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_node.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_python.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_ruby.zsh
+    stdout: true
+    stderr: true
+  - command: ./setup_macos.zsh
+    stdout: true
+    stderr: true
