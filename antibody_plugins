@@ -11,3 +11,4 @@ zdharma/fast-syntax-highlighting
 # before you load this script:
 zsh-users/zsh-history-substring-search
 romkatv/powerlevel10k
+peterhurford/git-it-on.zsh

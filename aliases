@@ -9,3 +9,15 @@ alias genhash="LC_ALL=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 30 | pb
 
 #alias branch
 alias awslogin="aws-google-auth -D -q -u jitendra.swami@branch.co -I C03o0mbow -S 294532642813 -R us-east-1 -p default --no-cache"
+
+#Gitit Aliases
+alias myrepos="gitit repo peterhurford" #put your name here (usage: `myrepos <reponame>` to open up your repo.)
+alias compare="gitit compare"
+alias commits="gitit commits"
+alias branch="gitit branch"
+alias gistory="gitit history"
+alias prs="gitit pulls"
+alias myprs="gitit pulls author:peterhurford" #put your name here
+alias mybranches="gitit branches mine"
+alias gitgrep="gitit grep"
+alias ctrlp="gitit ctrlp"
