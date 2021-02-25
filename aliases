@@ -1,0 +1,18 @@
+# Create Aliases
+alias ls='exa -laFh --git'
+alias exa='exa -laFh --git'
+alias rm=trash
+alias man=batman
+alias genhash="LC_ALL=C; cat /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 30 | pbcopy; pbpaste"%
+
+#Gitit Aliases
+alias myrepos="gitit repo peterhurford" #put your name here (usage: `myrepos <reponame>` to open up your repo.)
+alias compare="gitit compare"
+alias commits="gitit commits"
+alias branch="gitit branch"
+alias gistory="gitit history"
+alias prs="gitit pulls"
+alias myprs="gitit pulls author:peterhurford" #put your name here
+alias mybranches="gitit branches mine"
+alias gitgrep="gitit grep"
+alias ctrlp="gitit ctrlp"

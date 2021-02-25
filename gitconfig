@@ -1,0 +1,7 @@
+[user]
+	name = Jitendra Swami
+	email = jeetblswami@users.noreply.github.com
+[core]
+	editor = nano
+[pull]
+	ff = only
