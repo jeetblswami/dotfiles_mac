@@ -13,15 +13,10 @@ export DOTFILES="$HOME/.dotfiles"
 # Change ZSH Options
 
 # alias
-<<<<<<< HEAD
-source $HOME/.aliases
-
-=======
 source $DOTFILES/aliases
 source $HOME/.aliases
 
 
->>>>>>> 4afec676c3702cf954e0dbd14f122a9154c8f7ca
 # Adjust History Variables & Options
 [[ -z $HISTFILE ]] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=5000 # Session Memory Limit
