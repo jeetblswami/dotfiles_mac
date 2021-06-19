@@ -7,7 +7,6 @@
 - link:
     ~/.zshrc: zshrc
     ~/.zshenv: zshenv
-    ~/.aliases: aliases
     ~/.gitconfig: gitconfig
     ~/.nanorc: nanorc
     ~/.p10k.zsh: p10k.zsh
@@ -22,6 +21,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [touch ~/.aliases, Creating empty local alias]
   - command: ./setup_homebrew.zsh
     stdout: true
     stderr: true

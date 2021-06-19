@@ -13,8 +13,15 @@ export DOTFILES="$HOME/.dotfiles"
 # Change ZSH Options
 
 # alias
+<<<<<<< HEAD
 source $HOME/.aliases
 
+=======
+source $DOTFILES/aliases
+source $HOME/.aliases
+
+
+>>>>>>> 4afec676c3702cf954e0dbd14f122a9154c8f7ca
 # Adjust History Variables & Options
 [[ -z $HISTFILE ]] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=5000 # Session Memory Limit
@@ -89,6 +96,9 @@ zstyle ':plugin:history-search-multi-word' clear-on-cancel 'yes'
 
 # Load "New" Completion System
 autoload -Uz compinit && compinit
+
+
+source $DOTFILES/aliases_git
 
 # source node
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
