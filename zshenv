@@ -3,7 +3,6 @@
 # export PREFIX="$N_PREFIX"
 export GLOBAL_NODE_VERSION="15.8.0"
 export GLOBAL_PYTHON_VERSION="3.9.0"
-export GLOBAL_RUBY_VERSION="2.4.4"
 
 function exists() {
   # `command -v` is similar to `which`

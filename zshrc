@@ -101,10 +101,6 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 # source pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-# source rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
